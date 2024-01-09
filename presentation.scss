@@ -1,0 +1,78 @@
+.presentation-carte {
+  box-sizing: border-box;
+  border-radius: 40px 40px 0 0;
+  background-color: $grey3;
+}
+
+.presentation {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 0 80px 0 13px;
+}
+
+.presentation-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.presentation-case {
+  width: 250px;
+  height: 69px;
+  background: $white;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.image {
+  display: flex;
+  flex-direction: column;
+  img {
+    height: 225px;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+h2 {
+  font-size: 28px;
+  color: $black;
+  padding: 32px 17px 0 17px;
+  font-family: "Shrikhand", serif;
+}
+
+h3 {
+  font-size: 18px;
+  color: $black;
+}
+
+h4 {
+  font-size: 15px;
+  color: $grey2;
+}
+
+.prix {
+  font-size: 15px;
+  display: flex;
+  position: absolute;
+  right: 115px;
+  transform: translate(10px, -18px);
+}
+
+.barre {
+  border-bottom: 2px solid $green;
+  padding-bottom: 2px;
+  display: inline;
+  width: 40px;
+}
+
+
+.fa-heart {
+  display: flex;
+  justify-content: end;
+  position: relative;
+  transform: translate(-30px, 60px);
+}

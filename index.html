@@ -11,10 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
       rel="stylesheet"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -25,6 +22,9 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
+    <div class="loader-container">
+      <div class="loader"></div>
+    </div>
     <header>
       <nav>
         <h1>Ohmyfood</h1>
@@ -37,9 +37,7 @@
       </div>
       <div class="reservation">
         <h2>Réservez le menu qui vous convient</h2>
-        <p>
-          Découvrez des restaurants d'exception, sélectionnés par nos soins.
-        </p>
+        <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
         <button type="button">
           <a href="#">Explorer nos restaurants</a>
         </button>
@@ -54,21 +52,27 @@
               <p class="numero">1</p>
             </div>
             <i class="fa-solid fa-mobile-screen-button"></i>
-            <a href="#">Choisissez un restaurant</a>
+            <a href="#">
+              <p>Choissisez votre restaurant</p>
+            </a>
           </button>
           <button>
             <div>
               <p class="numero">2</p>
             </div>
             <i class="fa-solid fa-list-ul"></i>
-            <a href="#">Composez votre menu</a>
+            <a href="#">
+              <p>Composez votre menu</p>
+            </a>
           </button>
           <button>
             <div>
               <p class="numero">3</p>
             </div>
             <i class="fa-solid fa-store"></i>
-            <a href="#">Dégustez au restaurant</a>
+            <a href="#">
+              <p>Dégustez au restaurant</p>
+            </a>
           </button>
         </ul>
       </section>
@@ -88,7 +92,7 @@
             <div class="item-text">
               <div class="text-partie1">
                 <a href="./la_palette_du_gout.html">
-                <h4>La palette du goût</h4>
+                  <h4>La palette du goût</h4>
                 </a>
                 <p>Ménilmontant</p>
               </div>
@@ -97,8 +101,6 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="items">
           <div class="item">
             <img
               src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
@@ -111,7 +113,9 @@
             </div>
             <div class="item-text">
               <div class="text-partie1">
-                <h4>La note enchantée</h4>
+                <a href="./la_note_enchantee.html">
+                  <h4>La note enchantée</h4>
+                </a>
                 <p>Charonne</p>
               </div>
               <div class="text-partie2">
@@ -119,8 +123,6 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="items">
           <div class="item">
             <img
               src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
@@ -128,7 +130,9 @@
             />
             <div class="item-text">
               <div class="text-partie1">
-                <h4>À la française</h4>
+                <a href="./a_la_francaise.html">
+                  <h4>À la française</h4>
+                </a>
                 <p>Cité rouge</p>
               </div>
               <div class="text-partie2">
@@ -136,8 +140,6 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="items">
           <div class="item">
             <img
               src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
@@ -145,7 +147,9 @@
             />
             <div class="item-text">
               <div class="text-partie1">
-                <h4>Le délice des sens</h4>
+                <a href="./le_delice_des_sens.html">
+                  <h4>Le délice des sens</h4>
+                </a>
                 <p>Folie-Méricourt</p>
               </div>
               <div class="text-partie2">
@@ -157,25 +161,25 @@
       </section>
     </main>
     <footer class="footer">
-        <div class="logo">
-          <h5>Ohmyfood</h5>
-        </div>
-        <div class="info">
-          <p>
+      <div class="logo">
+        <h5>Ohmyfood</h5>
+      </div>
+      <div class="info">
+        <p>
           <i class="fa-solid fa-utensils"></i>
           <a href="#">Proposer un restaurant</a>
-          </p>
-          <p>
-            <i class="fa-solid fa-handshake-angle"></i>
-            <a href="#">Devenir partenaire</a>
-          </p>
-          <p>
-            <a href="#">Mentions légales</a>
-          </p>
-          <p>
-            <a href="#">Contact</a>
-          </p>
-        </div>
+        </p>
+        <p>
+          <i class="fa-solid fa-handshake-angle"></i>
+          <a href="#">Devenir partenaire</a>
+        </p>
+        <p>
+          <a href="#">Mentions légales</a>
+        </p>
+        <p>
+          <a href="#">Contact</a>
+        </p>
+      </div>
     </footer>
   </body>
 </html>

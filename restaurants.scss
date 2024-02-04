@@ -3,12 +3,20 @@
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 66px;
+
+  @media (min-width: 1440px) {
+    padding: 0 180px;
+  }
   h3 {
     font-size: 24px;
     padding: 54px 0 36px 0;
   }
   .items {
     margin-bottom: 18px;
+    @media (min-width: 1440px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
     .item {
       display: flex;
       flex-direction: column;
@@ -65,12 +73,29 @@
 }
 
 .fa-heart {
-  font-size: 19px;
+  font-size: 22px;
   color: $black;
+  cursor: pointer;
 }
 
-.fa-heart-2 {
-  width: 22px;
-  height: 21px;
+// .fa-heart:checked {
+//   color: red;
+// }
+.heartLabel .fa-heart {
+  color: black; /* Couleur par défaut */
+  cursor: pointer;
+  font-size: 24px;
+}
+
+#heartCheckbox:checked + .heartLabel .fa-heart {
+  color: red; /* Couleur lorsque cliqué */
+  font-weight: 900;
+}
+
+.fa-heart:hover {
+  color: $primary;
+}
+
+.fa-heart.clicked {
   color: $primary;
 }

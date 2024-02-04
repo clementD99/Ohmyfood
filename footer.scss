@@ -2,9 +2,13 @@
   display: flex;
   padding: 22px 25px;
   flex-direction: column;
-  align-items: flex-start;
   gap: 16px;
   background-color: $grey2;
+
+  @media (min-width: 1440px) {
+    flex-direction: row-reverse;
+    padding: 30px 25px;
+  }
 }
 
 .footer h5 {
@@ -19,8 +23,12 @@
 .info {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   gap: 7px;
+
+  @media (min-width: 1440px) {
+    flex-direction: row;
+    gap: 16px;
+  }
 }
 
 .fa-utensils {

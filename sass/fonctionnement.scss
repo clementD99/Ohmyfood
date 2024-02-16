@@ -1,0 +1,79 @@
+.fonctionnement {
+  background-color: $white;
+
+  @media (min-width: 1440px) {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 180px;
+    gap: 25px;
+  }
+}
+
+.fonctionnement h3 {
+  font-size: 24px;
+  margin: 48px 80px 0 20px;
+}
+
+.fonctionnement ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+
+  @media (min-width: 1440px) {
+    flex-direction: row;
+    gap: 30px;
+  }
+}
+
+.fonctionnement div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, 100%);
+}
+
+.fonctionnement li {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 72px;
+  width: 90%;
+  border-radius: 20px;
+  border: transparent;
+  margin-bottom: 24px;
+  background: $grey3;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+}
+
+.fonctionnement li a {
+  color: $black;
+}
+
+.numero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $primary;
+  color: $white;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+}
+
+.fa-mobile-screen-button {
+  font-size: 20px;
+  margin-right: 27px;
+  color: $grey4;
+}
+
+.fa-list-ul {
+  margin-right: 28px;
+  color: $grey4;
+}
+
+.fa-store {
+  margin-right: 27px;
+  color: $grey4;
+}

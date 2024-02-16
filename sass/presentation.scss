@@ -1,0 +1,211 @@
+.presentation-carte {
+  position: relative;
+  margin-top: -40px;
+  border-radius: 40px 40px 0 0;
+  background-color: $grey3;
+
+  @media (min-width: 1440px) {
+    padding: 0 50px;
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.presentation {
+  padding: 0 13px;
+
+  @media (min-width: 1440px) {
+    padding: 0 220px;
+  }
+}
+
+.presentation-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-bottom: 40px;
+}
+
+.presentation-info:nth-child(1) {
+  animation-name: presentation;
+  animation-duration: 3s;
+}
+
+.presentation-info:nth-child(2) {
+  animation-name: presentation;
+  animation-duration: 4s;
+}
+
+.presentation-info:nth-child(3) {
+  animation-name: presentation;
+  animation-duration: 5s;
+}
+
+.presentation-case {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  width: 100%;
+  background: $white;
+  border-radius: 15px;
+  white-space: nowrap;
+
+  &:hover {
+    box-shadow: 0px 4px 15px rgba(#000, 0.25);
+    .presentation-case {
+      width: 90px;
+    }
+  }
+
+  &:hover,
+  &:active {
+    cursor: pointer;
+    .description {
+      width: calc(100% - 25% - 40px);
+    }
+
+    .prix {
+      width: 40px;
+    }
+
+    .validation {
+      width: 60px;
+      visibility: visible;
+
+      i {
+        transform: rotate(360deg);
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.image {
+  display: flex;
+  flex-direction: column;
+  img {
+    height: 225px;
+    width: 100%;
+    object-fit: cover;
+
+    @media (min-width: 1440px) {
+      height: 460px;
+    }
+  }
+}
+
+/***** pour le bouton commander *****/
+
+.bouton {
+  display: flex;
+  align-items: center;
+  padding: 20px 0 30px 0;
+
+  @media (min-width: 1440px) {
+    margin-left: 125px;
+  }
+}
+
+.presentation button {
+  height: 50px;
+  width: 186px;
+  border-radius: 25px;
+  border: transparent;
+  cursor: pointer;
+  background: var(--Button-Gradient, linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%));
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+
+  @media (min-width: 375px) {
+    margin-left: 82px;
+  }
+}
+
+.presentation button span {
+  color: $white;
+}
+
+.presentation button:hover {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%),
+    linear-gradient(201deg, #9356dc -5.2%, #ff79da 110.74%);
+}
+
+/***** titre + icone *****/
+
+.titre {
+  display: flex;
+  align-items: center;
+
+  @media (min-width: 1440px) {
+    justify-content: center;
+  }
+}
+
+.presentation-h2 {
+  font-size: 28px;
+  color: $black;
+  padding: 32px 17px 40px 17px;
+  font-family: "Shrikhand", serif;
+}
+
+h3 {
+  font-size: 18px;
+  color: $black;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+h4 {
+  font-size: 15px;
+  font-weight: 300;
+  color: $grey2;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.description {
+  padding: 15px 5px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.prix {
+  font-weight: bold;
+  color: $grey2;
+  padding: 15px 5px;
+}
+
+.barre {
+  border-bottom: 2px solid $green;
+  padding-bottom: 2px;
+  width: 40px;
+}
+
+/***** validation *****/
+
+.validation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $green;
+  width: 0;
+  border-radius: 0 15px 15px 0;
+  transition: 1s;
+  visibility: hidden;
+}
+
+.fa-circle-check {
+  display: flex;
+  align-items: center;
+  color: $white;
+  font-size: 22px;
+  height: 70px;
+  animation: check-spin 200ms 150ms ease-in-out forwards;
+
+  & > i {
+    transform: rotate(90deg);
+    transition: 1s;
+    opacity: 0;
+  }
+}

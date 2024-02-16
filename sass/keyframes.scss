@@ -1,0 +1,21 @@
+@keyframes presentation {
+  from {
+    opacity: 0;
+    margin-top: -40px;
+  }
+  to {
+    opacity: 1;
+    margin-top: 0px;
+  }
+}
+
+@keyframes validation {
+  from {
+    width: 0px;
+    visibility: hidden;
+  }
+  to {
+    width: 59px;
+    visibility: visible;
+  }
+}

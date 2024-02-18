@@ -44,6 +44,10 @@
   border: transparent;
   margin-bottom: 24px;
   background: $grey3;
+  cursor: pointer;
+}
+
+.fonctionnement li:hover {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 }
 
@@ -62,6 +66,8 @@
   height: 24px;
 }
 
+/*****font-awesome*****/
+
 .fa-mobile-screen-button {
   font-size: 20px;
   margin-right: 27px;
@@ -76,4 +82,8 @@
 .fa-store {
   margin-right: 27px;
   color: $grey4;
+}
+
+.fa-mobile-screen-button:hover, .fa-list-ul:hover, .fa-store:hover {
+  color: $primary;
 }

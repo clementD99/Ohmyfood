@@ -265,6 +265,10 @@ a {
   border: transparent;
   margin-bottom: 24px;
   background: #f6f6f6;
+  cursor: pointer;
+}
+
+.fonctionnement li:hover {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 }
 
@@ -283,6 +287,7 @@ a {
   height: 24px;
 }
 
+/*****font-awesome*****/
 .fa-mobile-screen-button {
   font-size: 20px;
   margin-right: 27px;
@@ -297,6 +302,10 @@ a {
 .fa-store {
   margin-right: 27px;
   color: #7e7e7e;
+}
+
+.fa-mobile-screen-button:hover, .fa-list-ul:hover, .fa-store:hover {
+  color: #9356dc;
 }
 
 .restaurants {
@@ -509,6 +518,11 @@ a {
 @media (min-width: 375px) {
   .presentation button {
     margin-left: 82px;
+  }
+}
+@media (min-width: 1440px) {
+  .presentation button {
+    margin-left: 125px;
   }
 }
 

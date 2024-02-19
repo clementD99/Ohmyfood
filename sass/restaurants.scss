@@ -21,6 +21,7 @@
     .item {
       display: flex;
       flex-direction: column;
+      position: relative;
       padding-bottom: 17px;
       img {
         height: 170px;
@@ -30,11 +31,9 @@
       }
 
       .nouveau {
-        display: flex;
-        justify-content: center;
         position: absolute;
         margin-top: 12px;
-        right: 40px;
+        right: 15px;
         background-color: $green;
         .nouveau-txt {
           p {
@@ -76,16 +75,11 @@
 
 /*****Coeur*****/
 
-.fa-heart {
-  font-size: 22px;
-  color: $black;
-  cursor: pointer;
-}
-
 .heartLabel .fa-heart {
   color: black; 
   cursor: pointer;
   font-size: 24px;
+  transition-duration: 500ms;
 }
 
 .heartCheckbox:checked + .heartLabel .fa-heart {

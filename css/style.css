@@ -150,6 +150,11 @@ header .reservation button {
     margin-left: 82px;
   }
 }
+@media (min-width: 768px) {
+  header .reservation button {
+    margin-left: 270px;
+  }
+}
 @media (min-width: 1440px) {
   header .reservation button {
     margin-left: 645px;
@@ -417,6 +422,11 @@ a {
     padding: 0 220px;
   }
 }
+@media (min-width: 768px) {
+  .presentation {
+    padding: 0 80px;
+  }
+}
 
 .presentation-info {
   display: flex;
@@ -496,7 +506,7 @@ a {
 }
 @media (min-width: 1440px) {
   .bouton {
-    margin-left: 125px;
+    margin-left: 86px;
   }
 }
 
@@ -514,9 +524,14 @@ a {
     margin-left: 82px;
   }
 }
+@media (min-width: 768px) {
+  .presentation button {
+    margin-left: 195px;
+  }
+}
 @media (min-width: 1440px) {
   .presentation button {
-    margin-left: 125px;
+    margin-left: 245px;
   }
 }
 
@@ -534,6 +549,11 @@ a {
   align-items: center;
 }
 @media (min-width: 1440px) {
+  .titre {
+    justify-content: center;
+  }
+}
+@media (min-width: 768px) {
   .titre {
     justify-content: center;
   }

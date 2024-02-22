@@ -147,17 +147,20 @@ header .reservation button {
 }
 @media (min-width: 375px) {
   header .reservation button {
-    margin-left: 82px;
+    margin: auto;
+    margin-top: 20px;
   }
 }
 @media (min-width: 768px) {
   header .reservation button {
-    margin-left: 270px;
+    margin: auto;
+    margin-top: 20px;
   }
 }
 @media (min-width: 1440px) {
   header .reservation button {
-    margin-left: 645px;
+    margin: auto;
+    margin-top: 20px;
   }
 }
 header .reservation button:hover {
@@ -521,17 +524,17 @@ a {
 }
 @media (min-width: 375px) {
   .presentation button {
-    margin-left: 82px;
+    margin: auto;
   }
 }
 @media (min-width: 768px) {
   .presentation button {
-    margin-left: 195px;
+    margin: auto;
   }
 }
 @media (min-width: 1440px) {
   .presentation button {
-    margin-left: 245px;
+    margin: auto;
   }
 }
 

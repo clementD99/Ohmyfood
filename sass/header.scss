@@ -73,15 +73,18 @@ header {
     
 
     @media (min-width: 375px) {
-      margin-left: 82px;
+      margin: auto;
+      margin-top: 20px;
     }
 
     @media (min-width: 768px) {
-      margin-left: 270px;
+      margin: auto;
+      margin-top: 20px;
     }
 
     @media (min-width: 1440px) {
-      margin-left: 645px;
+      margin: auto;
+      margin-top: 20px;
     }
   }
 
